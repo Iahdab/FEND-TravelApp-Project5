@@ -1,0 +1,39 @@
+form {
+  
+    border: 1px solid #545454;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 3px;
+    padding: 40px;
+    font-size: medium;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+   
+    input {
+        padding: 5px 20px;
+        width: 80%;
+        line-height: 16px;
+        margin: 10px 0;
+    }
+    //button
+    #submittrip{
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+        width: 50%;
+        box-shadow: none;
+        border: none;
+        font-style: bold;
+        background:#8ba7a769;
+        text-transform: uppercase;
+        border-radius: 15px;
+        border-color:#ead7ecaf ;
+       &:hover{
+        background:#e1ebeb69;
+        color: dodgerblue;
+        }
+    }
+    
+}
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                Logo
+            </div>
+            <div class="nav">
+                navigation
+            </div>
+        </header>
+
+        <main>
+
+            <section id="form" >
+                <h1>FIND YOUR TRIP</h1>
+                <form>
+                    
+                    <label for="citydest"> YOUR DESTIONATION</label>
+                    <input id="citydest" type="text" name="input" value=""  placeholder="Destionation : Jeddah" required>
+                    <br>
+                    <label for="starDate">Start-Date Checkin</label>
+                    <input id="starDate"  type="date"  name="start" required>
+                    <br>
+                    <label for="endDate">End-Date Checkout</label>
+                    <input id="endDate"  type="date"  name="end"  required >
+                    <input id="submittrip" value="Check trip" type="submit" >
+                    <br>
+                    <!-- <button ></button> -->
+                </form>
+            </section>
+            <!-- Trip Summary section  -->
+            <section class="reult">
+                <h1>Trip Summary</h1>
+                <p id="tripcity"></p>
+                <p id="tripcountdown" ></p>
+                <p id="tripduration" ></p>
+                <p id="tripweather"></p>
+                <img id="trippicture" src="" alt="">
+                <strong></strong>
+            </section>
+            
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+</html>
