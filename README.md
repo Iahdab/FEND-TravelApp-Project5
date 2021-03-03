@@ -1,5 +1,5 @@
 # Project Travel App 
-***5th Project for [UDACITY](UDACITY.com) NanoDegree*** 
+***5th Project Cap Stone for [UDACITY](UDACITY.com) NanoDegree*** 
 
 ## Table of Contents
 
