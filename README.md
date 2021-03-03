@@ -21,14 +21,14 @@ This project requires you to build out a travel app that, at a minimum, obtains 
 
   ### Functionality
   
-   -**Server:**
+   - **Server:**
      server is `index.js` that do all the wroking job for sending request to app and the return data to the client js.
      the server work with 3 API interacting with each other , GEOname API, Weatherbit API, PIXabay API 
      geoname after input the city name this api take name and look for this city and return lat and lng.
      then the pixabay and weather will work with the data from geoname and start request to get data and then sent to client
-   -**Client:**
+   - **Client:**
      client has  main func. in `formhandler.js` which do start the post datarequest to the server after the user inputs data files.
-   -**Test:** 
+   - **Test:** 
      - test server 
      - test form handler
     
