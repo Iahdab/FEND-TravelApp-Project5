@@ -22,12 +22,12 @@ This project requires you to build out a travel app that, at a minimum, obtains 
   ### Functionality
   
    - **Server:**
-     server is `index.js` that do all the wroking job for sending request to app and the return data to the client js.
-     the server work with 3 API interacting with each other , GEOname API, Weatherbit API, PIXabay API 
-     geoname after input the city name this api take name and look for this city and return lat and lng.
-     then the pixabay and weather will work with the data from geoname and start request to get data and then sent to client
+     server is `index.js` that do all the working job for sending a request to the app and the return data to the client js.
+     the server work with 3 API interacting with each other, GEOname API, Weatherbit API & PIXabay API 
+     , GEOname after input the city name this API take a name and look for this city and return lat and lng.
+     then the PIXabay and Weatherbit will work with the data from GEOname and start request to get data and then sent to the client
    - **Client:**
-     client has  main func. in `formhandler.js` which do start the post datarequest to the server after the user inputs data files.
+     the client has a main func. in `formhandler.js` which do start the post data request to the server after the user inputs data files.
    - **Test:** 
      - test server 
      - test form handler
@@ -59,13 +59,13 @@ This project requires you to build out a travel app that, at a minimum, obtains 
    - **Clone In Terminal:**\
     ```git clone https://github.com/Iahdab/Fend-Evalute-Nlp-project4.git```
      OR
-   - **Clone In VS code Command Palatte:**\
+   - **Clone In VS code Command Palette:**\
     ```>Git: Colne  https://github.com/Iahdab/Fend-Evalute-Nlp-project4.git```
-   - ***NOTE: also you can fetch or Download as zip file.***
+   - ***NOTE: also you can fetch or Download it as a zip file.***
   
   ### SetUpProject
   
-   - **In terminal/vs code install these dependncey**
+   - **In terminal/vs code install these dependencies**
      - ``` npm install ```
    - **Sign UP For all APIS** 
      - [GeoNameAPI](http://www.geonames.org/)
@@ -74,7 +74,7 @@ This project requires you to build out a travel app that, at a minimum, obtains 
    - **In project you must have 3Key FOR ALL APIS so the project can run**
      - in my project i used a .env file and add the key and installed  
          - ``` npm install dotenv ```
-     - in .env file add your 3Key FOR ALL APISy as : 
+     - in .env file add your 3Key FOR ALL APIs as : 
          - ```GeoName_API_UserName=**************************```
          - ```WeatherBit_API_Key=**************************```
          - ```Pixabay_API_Key=**************************```
@@ -85,16 +85,16 @@ This project requires you to build out a travel app that, at a minimum, obtains 
     - *Open 3 Terminal in VS code:*
       - Terminal 1: to start
         - ``` npm start ```
-      - Terminal 2:to run in devlopment mode
+      - Terminal 2:to run in development mode
         - ``` npm run build-dev ```
-      - Terminal 3: to run in prodaction mode (to build dist folder)
+      - Terminal 3: to run in production mode (to build dist folder)
         - ``` npm run build-prod ```
       - Terminal 4(optional): to run test
         - ``` npm test ```
-    - *Lastly run the project on http://localhost:8080/ or http://127.0.0.1:8080 on web-broswer*
+    - *Lastly, run the project on http://localhost:8080/ or http://127.0.0.1:8080 on web-browser*
    
   ### Dependencies
-   - **Depeondency used in project "Package.Json" :**
+   - **Depeondency used in the project "Package.Json" :**
    body-parser, cors, dotenv, express, node-fetch, webpack, webpack-cli, @babel/core,  @babel/preset-env,
    babel-loader, babel-polyfill,clean-webpack-plugin, css-loader, file-loader, html-webpack-plugin,
    jest, mini-css-extract-plugin, node-sass, nodemon, optimize-css-assets-webpack-plugin, prettier,
